@@ -15,10 +15,10 @@
 #' str_split_one(y, pattern = stringr::fixed("."))
 str_split_one <- function (string, pattern, n = Inf){
   stopifnot(is.character(string), length(string) <= 1)
-  if(lengh(string) == 1) {
-    stringr::str_split(string = string, pattern - pattern, n = n)[[1]]
+  if(length(string) == 1) {
+    stringr::str_split(string = string, pattern = pattern, n = n)[[1]]
   } else {
     character()
   }
 }
-rename_files("strsplit1","str_split_one")
+
